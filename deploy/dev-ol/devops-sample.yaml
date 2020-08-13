@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: kubesphere
+    app: kubesphere-demo
     component: ks-sample-dev
     tier: backend
   name: ks-sample-dev
@@ -12,13 +12,13 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kubesphere
+      app: kubesphere-demo
       component: ks-sample-dev
       tier: backend
   template:
     metadata:
       labels:
-        app: kubesphere
+        app: kubesphere-demo
         component: ks-sample-dev
         tier: backend
     spec:
