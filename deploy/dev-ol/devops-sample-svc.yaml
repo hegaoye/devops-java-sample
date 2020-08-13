@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: kubesphere
+    app: kubesphere-demo
     component: ks-sample-dev
   name: ks-sample-dev
   namespace: kubesphere-sample-dev
@@ -14,7 +14,7 @@ spec:
       targetPort: 8080
       nodePort: 30861
   selector:
-    app: kubesphere
+    app: kubesphere-demo
     component: ks-sample-dev
     tier: backend
   sessionAffinity: None
